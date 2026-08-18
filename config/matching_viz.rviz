@@ -1,0 +1,76 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Class: rviz_default_plugins/Grid
+      Name: Grid
+      Enabled: true
+      Line Style:
+        Line Width: 0.03
+        Value: Lines
+      Normal Cell Count: 0
+      Cell Size: 1
+      Plane: XY
+      Plane Cell Count: 20
+      Reference Frame: <Fixed Frame>
+      Value: true
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Reference (Red)
+      Enabled: true
+      Topic:
+        Value: /viz/reference_cloud
+        Depth: 1
+        Durability Policy: Transient Local
+        Reliability Policy: Reliable
+      Size (Pixels): 1
+      Style: Points
+      Color Transformer: RGB8
+      Use Fixed Frame: true
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Source Original (Blue)
+      Enabled: true
+      Topic:
+        Value: /viz/source_cloud
+        Depth: 1
+        Durability Policy: Transient Local
+        Reliability Policy: Reliable
+      Size (Pixels): 1
+      Style: Points
+      Color Transformer: RGB8
+      Use Fixed Frame: true
+    - Class: rviz_default_plugins/PointCloud2
+      Name: Aligned (Green)
+      Enabled: true
+      Topic:
+        Value: /viz/aligned_cloud
+        Depth: 1
+        Durability Policy: Transient Local
+        Reliability Policy: Reliable
+      Size (Pixels): 1
+      Style: Points
+      Color Transformer: RGB8
+      Use Fixed Frame: true
+  Global Options:
+    Background Color: 48; 48; 48
+    Fixed Frame: map
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/FocusCamera
+  Value: true
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Distance: 30
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Name: Current View
+      Pitch: 0.5
+      Yaw: 0.5
+      Value: Orbit (rviz_default_plugins)
+Window Geometry:
+  Width: 1200
+  Height: 800

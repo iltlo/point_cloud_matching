@@ -1,0 +1,12 @@
+string reference_path
+string target_path
+float64 voxel_resolution
+bool skip_coarse
+geometry_msgs/Transform initial_guess
+---
+bool success
+string message
+float64 fitness_score
+float64 rmse
+float64 elapsed_ms
+geometry_msgs/TransformStamped result_transform
